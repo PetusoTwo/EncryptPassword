@@ -3,7 +3,7 @@
 import hashlib
 
 def main(): 
-    password = str(input('Ingrese la contraseña a cifrar: ')).encode('utf-8')
+    password = str(input('Ingrese la contraseña a encriptar: ')).encode('utf-8')
     
     md5pass = hashlib.md5(password).hexdigest()
     print('MD5: ' + md5pass)
@@ -22,6 +22,6 @@ def main():
     
     sha512pass = hashlib.sha512(password).hexdigest()
     print('SHA512: ' + sha512pass)
-    
+
 if __name__ == '__main__':
     main()
